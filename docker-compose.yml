@@ -14,6 +14,7 @@ services:
 
   wordpress:
     image: wordpress:fpm
+    user: ${CONTAINER_USER}:${CONTAINER_USER}
     networks:
       - backend
       - databases
